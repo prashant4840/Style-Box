@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stylebox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> Stylebox </h1>
+    <h2 class="sub-title">A simple text editor with style options</h2>
+
+    <div class="editor-wrapper">
+        <textarea id="editor" placeholder="Enter your text here..."></textarea>
+    </div>
+
+    <div class="controls-container">
+    
+<!-- Background Color -->
+ <div class="control-box">
+    <span class="box-label"><b>Background colour</b></span>
+    <br>
+    <div class="swatches-row">
+        <button id="bg-yellow" class="swatch" style="background-color: #ded007;" onclick="document.getElementById('editor').style.backgroundColor='#ded007'"></button>
+        <button id="bg-purple" class="swatch" style="background-color: #a00b78;" onclick="document.getElementById('editor').style.backgroundColor='#a00b78'"></button>
+        <button id="bg-orange" class="swatch" style="background-color: #fed7aa;" onclick="document.getElementById('editor').style.backgroundColor='#fed7aa'"></button>
+        <button id="bg-teal" class="swatch" style="background-color: #179791;" onclick="document.getElementById('editor').style.backgroundColor='#179791'"></button>
+        <button id="bg-black" class="swatch" style="background-color: #000000;" onclick="document.getElementById('editor').style.backgroundColor='#000000'"></button>
+    </div>
+</div>
+
+<!-- Text Color -->
+<div class="control-box">
+    <span class="box-label"><b>Text color</b></span>
+    <div class="swatches-row">
+        <button id="text-black" class="swatch" style="background-color: #000000;" onclick="document.getElementById('editor').style.color='#000000'"></button>
+        <button id="text-blue" class="swatch" style="background-color: #2563eb;" onclick="document.getElementById('editor').style.color='#2563eb'"></button>
+        <button id="text-red" class="swatch" style="background-color: #dc2626;" onclick="document.getElementById('editor').style.color='#dc2626'"></button>
+        <button id="text-green" class="swatch" style="background-color: #07ab14;" onclick="document.getElementById('editor').style.color='#07ab14'"></button>
+        <button id="text-indigo" class="swatch" style="background-color: #320dac;" onclick="document.getElementById('editor').style.color='#320dac'"></button>
+    </div>
+</div>
+
+<!-- Font Style -->
+        <div class="control-box">
+            <span class="box-label"><b>Font-style</b></span>
+            <div class="dropdown-wrapper">
+                <select id="fontSelect">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="Georgia, serif">Georgia</option>
+                    <option value="Verdana, sans-serif">Verdana</option>
+                    <option value="'Times New Roman', serif">Times New Roman</option>
+                    <option value="'Courier New', monospace">Courier New</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
