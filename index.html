@@ -42,18 +42,19 @@
 </div>
 
 <!-- Font Style -->
-        <div class="control-box">
-            <span class="box-label"><b>Font-style</b></span>
-            <div class="dropdown-wrapper">
-                <select id="fontSelect">
-                    <option value="Arial, sans-serif">Arial</option>
-                    <option value="Georgia, serif">Georgia</option>
-                    <option value="Verdana, sans-serif">Verdana</option>
-                    <option value="'Times New Roman', serif">Times New Roman</option>
-                    <option value="'Courier New', monospace">Courier New</option>
-                </select>
-            </div>
-        </div>
+      <!-- Font Style / Dropdown Control Box -->
+<div class="control-box">
+    <span class="box-label">font-style</span>
+    <div class="dropdown-wrapper">
+        <select id="fontSelect" onchange="document.getElementById('editor').style.fontFamily=this.value">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Georgia, serif">Georgia</option>
+            <option value="Verdana, sans-serif">Verdana</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="'Courier New', monospace">Courier New</option>
+        </select>
+    </div>
+</div>
 
     </div>
 
